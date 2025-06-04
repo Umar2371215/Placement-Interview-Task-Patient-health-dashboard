@@ -26,6 +26,11 @@ DATA SOURCES:
 • Primary: Firebase Firestore (live connection, config included)
 • Fallback: test_data.csv (sample dataset)
 
+DATA FILE INSTRUCTIONS:
+1. Make sure "test_data_my_ai_placemnt.csv" (test data file for ML) is in the same folder as health_data_pipeline.py requires it
+2. Or edit line 7 in health_data_pipeline.py to match your file location:
+   file_path = "your/file/path/test_data.csv"
+
 PERFORMANCE:
 • Accuracy: 100% (test dataset)
 • F1 Score: 1.0 (perfect)
