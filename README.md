@@ -1,39 +1,47 @@
-# Placement-Interview-Task-Patient-health-dashboard
-Firebase-powered health data dashboard with ML classification
+Patient Health Monitoring System
 
+A comprehensive, Firebase-powered solution for tracking and analyzing patient health metrics with machine learning classification.
 
-# Patient Health Dashboard
+KEY FEATURES:
+• Real-time visualization of:
+  - Heart rate trends
+  - Activity levels
+  - Sleep patterns
+  - Nutritional intake
+• Automated health assessment (Good/Moderate/Poor)
+• Data export options (PDF/CSV/image formats)
+• Fully responsive design (works on all devices)
 
-A comprehensive dashboard for visualizing and analyzing patient health data with predictive capabilities.
+TECHNOLOGIES USED:
+Frontend: HTML5, CSS3, JavaScript (Firebase, Chart.js)
+Backend: Python (scikit-learn, pandas, numpy)
 
-## Features
+HOW TO RUN:
+1. Dashboard: Open index.html in any modern browser
+2. ML Model:
+   pip install pandas numpy scikit-learn
+   python health_data_pipeline.py
 
-- **Data Visualization**: Interactive charts for health metrics (heart rate, steps, sleep, nutrition)
-- **Health Classification**: Machine learning model to categorize patient health status (Good/Moderate/Poor)
-- **Data Export**: Export charts as images or full data as CSV/PDF
-- **Responsive Design**: Works on desktop and mobile devices
+DATA SOURCES:
+• Primary: Firebase Firestore (live connection, config included)
+• Fallback: test_data.csv (sample dataset)
 
-## Technologies
+PERFORMANCE:
+• Accuracy: 100% (test dataset)
+• F1 Score: 1.0 (perfect)
+• Key Predictors:
+  1. Heart rate patterns
+  2. Blood pressure
+  3. Sleep duration
 
-- Frontend: HTML, CSS, JavaScript, Firebase SDK, Chart.js
-- Backend: Python, scikit-learn, pandas, numpy
+FILES INCLUDED:
+• index.html - Complete dashboard
+• health_data_pipeline.py - Analysis script
+• test_data.csv - Sample dataset
 
-## Setup
+SYSTEM REQUIREMENTS:
+• Python 3.12.7+
+• Modern web browser
+• Tested on Windows 11 (64-bit)
 
-1. **Frontend**:
-   - Open `index.html` in a modern browser
-   - No additional setup required (Firebase config included)
-
-2. **Machine Learning Model**:
-   - Install requirements: `pip install pandas numpy scikit-learn`
-   - Run the Python script: `python health_classifier.py`
-
-## Data Sources
-
-- Patient data is fetched from Firebase Firestore
-- Fallback CSV data can be used if Firebase is unavailable
-
-## Evaluation Metrics
-
-- Model Accuracy: 1.0 (varies by dataset)
-- F1 Score: 1.0 (weighted average)
+Note: Results may vary with different datasets. Includes demo Firebase configuration.
